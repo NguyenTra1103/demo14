@@ -71,12 +71,13 @@
           <div class="card-body ">
             <div style="text-align: center;" >
               <h4 class="card-title show_txt"> </h4>
-              <h3 class="card-text food-title" style="color:green;"><a href="detail?id=${o.id}" title="View Food">${o.name}</a></h3>
-              <p style="font-size: 20px; color: red;" class="money">${o.price} VNĐ</p>
+              <h3 class="card-text food-title" style="color:green;"><a href="detail?id=${o.id}" title="View Food" style="text-decoration:none; color:chocolate">${o.name}</a></h3>
+              <p style="font-size: 20px; color:#084298;" class="money">${o.price} VNĐ</p>
             </div>
             <c:if test="${sessionScope.acc != null}">
               <div class="all-button" style="margin-top: 20px;"><hr>
-                <button  type="button" class="btn button-1 btn-success btn-cart"  style="margin-right: 15px;min-width: 100px;"><a href="add-to-cart?id=${o.id}">Thêm vào giỏ hàng</a></button>
+                <button  type="button" class="btn button-1 btn-danger btn-cart"  style="margin-right: 15px;min-width: 100px;"><a href="add-to-cart?id=${o.id}" style="color: white; text-decoration: none">Thêm vào giỏ hàng</a></button>
+
               </div>
             </c:if>
           </div>
